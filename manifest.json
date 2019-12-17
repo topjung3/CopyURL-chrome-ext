@@ -1,0 +1,27 @@
+{
+  "name": "Copy URL",
+  "description": "URL Copy",
+  "version": "0.1",
+  "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": true
+    },
+  "browser_action": {
+    "default_title": "Copy URL"
+  },
+  "manifest_version": 2,
+  "commands": {
+    "_execute_browser_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+U",
+        "mac": "Command+Shift+U"
+      },
+      "description": "Copy URL"
+    }
+  },
+  "permissions": [
+    "tabs"
+  ]
+}
